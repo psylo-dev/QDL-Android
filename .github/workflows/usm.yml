@@ -18,16 +18,16 @@ jobs:
       - name: Update libusb submodule (android branch)
         run: |
           cd app/src/main/cpp/libusb
-          git fetch origin android
-          git checkout android
+          git fetch origin
+          git checkout -B android origin/android
           git reset --hard origin/android
           cd -
 
       - name: Update libxml2 submodule (lineage-20.0 branch)
         run: |
           cd app/src/main/cpp/libxml2
-          git fetch origin lineage-20.0
-          git checkout lineage-20.0
+          git fetch origin
+          git checkout -B lineage-20.0 origin/lineage-20.0
           git reset --hard origin/lineage-20.0
           cd -
 
