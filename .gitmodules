@@ -2,3 +2,7 @@
 	path = app/src/main/cpp/libusb
 	url = https://github.com/xloem/libusb
 	branch = android
+[submodule "libxml2"]
+	path = app/src/main/cpp/libxml2
+	url = https://github.com/LineageOS/android_external_libxml2.git
+        branch = lineage-20.0
